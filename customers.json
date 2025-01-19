@@ -1,0 +1,20 @@
+{
+    "M001": {
+        "name": "Brijesh Gupta",
+        "mobile": "7007087858",
+        "address": "Lat: 26.8466937, Lng: 80.946166",
+        "product": "DAHI"
+    },
+    "M002": {
+        "name": "Brijesh Gupta",
+        "mobile": "7007087858",
+        "address": "Lat: 26.8466937, Lng: 80.946166",
+        "product": "MILK"
+    },
+    "M003": {
+        "name": "abhi",
+        "mobile": "7009898978",
+        "address": "Lat: 26.8466937, Lng: 80.946166",
+        "product": "MILK"
+    }
+}

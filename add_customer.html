@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Customer</h1>
+        <form id="addCustomerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="address">Address (Lat, Lng):</label>
+            <input type="text" id="address" name="address" readonly>
+            <button type="button" id="fetchLocation">Fetch Location</button>
+
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <option value="MILK">MILK</option>
+                <option value="DAHI">DAHI</option>
+            </select>
+
+            <button type="submit">Add Customer</button>
+        </form>
+        <div id="qrCodeContainer" style="display: none;">
+            <h2>Customer Added Successfully</h2>
+            <p>Customer ID: <span id="generatedCustomerId"></span></p>
+            <div id="qrCode"></div>
+            <button id="printQRCode">Print QR Code</button>
+        </div>
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

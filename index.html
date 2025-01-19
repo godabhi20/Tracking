@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner and Customer Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Scanner and Customer Management</h1>
+        <div id="scanner"></div>
+        <div class="button-container">
+            <button onclick="startQRScanner()">Start QR Scanner</button>
+            <a href="add_customer.html" class="button">Add Customer</a>
+            <a href="view_customers.php" class="button">View Customers</a>
+        </div>
+    </div>
+
+    <div id="qrResult" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Scanned Customer Data</h2>
+            <form id="scanForm">
+                <label for="customerId">Customer ID:</label>
+                <input type="text" id="customerId" readonly>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" readonly>
+
+                <label for="datetime">Date & Time:</label>
+                <input type="text" id="datetime" readonly>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" readonly>
+
+                <label for="product">Product:</label>
+                <select id="product">
+                    <option value="MILK">MILK</option>
+                    <option value="DAHI">DAHI</option>
+                </select>
+
+                <label for="liter">Liter:</label>
+                <input type="number" id="liter" min="1" max="5" step="1">
+
+                <label for="perLiterAmount">Per Liter Amount:</label>
+                <select id="perLiterAmount">
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                </select>
+
+                <label for="totalAmount">Total Amount:</label>
+                <input type="text" id="totalAmount" readonly>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
